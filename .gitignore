@@ -1,6 +1,6 @@
-*.class
+bin
+classes/
+target
+*.pyc
+.lein-deps-sum
 
-# Package Files #
-*.jar
-*.war
-*.ear

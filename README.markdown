@@ -14,3 +14,5 @@ mvn clean package
 
 This will package your code and all the non-Storm dependencies into a single "uberjar" at the path `target/storm-example-wordcount-{version}-jar-with-dependencies.jar`.
 
+For put messages for kestrel, do below command.
+java -cp storm-example-wordcount-1.0.0-SNAPSHOT-jar-with-dependencies.jar storm.starter.MemcachedPutter __KESTREL_HOST__:22133 MessageQueue 1000

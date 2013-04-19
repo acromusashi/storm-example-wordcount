@@ -5,19 +5,19 @@ nimbus.host        : __NIMBUS_HOST__
 ## NimbusPort
 nimbus.thrift.port : 6627
 ## WorkerProcess Number
-topology.workers   : 2
+topology.workers   : 8
 ## Storm Debug Flag
 topology.debug     : true
 
 ## TopologyDefine
 Kestrel.ImmediateAck : false
-TupleEmit.Interval : 1
+TupleEmit.Interval : 0
 ## Set Kestrel Host:Port List
 Kestrel.Hosts              : 
   - __KESTREL_HOST__:2229
 
 Kestrel.QueueName         : MessageQueue
-KestrelSpout.Parallelism  : 1
-SplitSentence.Parallelism : 2
-WordCount.Parallelism     : 2
+KestrelSpout.Parallelism  : 2
+SplitSentence.Parallelism : 20
+WordCount.Parallelism     : 20
 
